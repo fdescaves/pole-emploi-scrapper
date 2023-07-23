@@ -1,12 +1,10 @@
 # pole-emploi-scrapper
 
+This application was written as an exercice using hexagonal architecture to gather job offers from the [pôle-emploi API](https://pole-emploi.io) in an incremental way.
+
 ## Prerequisites
 
 - .NET 7 runtime
-
-## Purpose
-
-This application was written as an exercice using hexagonal architecture to gather job offers from the [pôle-emploi API](https://pole-emploi.io) in an incremental way.
 
 ## How to run it
 
