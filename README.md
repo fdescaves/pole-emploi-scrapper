@@ -8,6 +8,8 @@ This application was written as an exercice using hexagonal architecture to gath
 
 ## How to run it
 
+- Download the latest release
+
 - Open the [appsettings.json](src/PoleEmploiScrapper.Api/appsettings.json) configuration file
 
 - Create your account of pole-emploi api by following this guide <https://pole-emploi.io/data/documentation/gestion-compte-applications>
@@ -24,6 +26,10 @@ This application was written as an exercice using hexagonal architecture to gath
     "clientSecret": ""
   }
 ```
+
+- Launch `PoleEmploiScrapper.Api.exe`
+
+- Go to <http://localhost:5000/swagger/index.html> to see the swagger or directly to <http://localhost:5000/Reporting> to see the statistics about gathered job offers
 
 ## Improvement ideas
 
