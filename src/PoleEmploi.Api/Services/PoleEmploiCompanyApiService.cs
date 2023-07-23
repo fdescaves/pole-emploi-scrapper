@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.WebUtilities;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Options;
 using PoleEmploi.Api.Models;
 using PoleEmploi.Api.Models.Responses;
@@ -26,7 +26,7 @@ namespace PoleEmploi.Api.Services
 
         public async Task<PoleEmploiAccessToken> GetAccessToken()
         {
-            string url = QueryHelpers.AddQueryString("connexion/oauth2/access_token", "realm", "/partenaire");
+            string url = $"connexion/oauth2/access_token{QueryString.Create("realm", "/partenaire").ToUriComponent()}";
 
             IList<KeyValuePair<string, string>> formData = new List<KeyValuePair<string, string>>
             {

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>disable</Nullable>
-    <ImplicitUsings>disable</ImplicitUsings>
+    <ImplicitUsings>false</ImplicitUsings>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <UserSecretsId>a79e8bbd-298f-41c4-a6b9-6ce6f81213d1</UserSecretsId>
     <NoWarn>$(NoWarn);1591</NoWarn>
@@ -25,6 +25,12 @@
     <ProjectReference Include="..\PoleEmploiScrapper.Application\PoleEmploiScrapper.Application.csproj" />
     <ProjectReference Include="..\PoleEmploiScrapper.Configuration\PoleEmploiScrapper.Configuration.csproj" />
     <ProjectReference Include="..\PoleEmploiScrapper.Infrastructure\PoleEmploiScrapper.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="PoleEmploiScrapper.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

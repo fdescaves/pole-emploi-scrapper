@@ -4,7 +4,7 @@ using System.Net;
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.WebUtilities;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Options;
 using PoleEmploi.Api.Models;
 using PoleEmploi.Api.Models.Responses;
@@ -26,23 +26,20 @@ namespace PoleEmploi.Api.Services
 
         public async Task<SearchJobOffersResult> SearchJobOffers(string accessToken, SearchJobOffersFilters searchJobOffersFilters)
         {
-            string url = "search";
-
-            url = QueryHelpers.AddQueryString(url, new Dictionary<string, string>
-            {
-                ["range"] = $"{searchJobOffersFilters.Index}-{searchJobOffersFilters.Index + searchJobOffersFilters.PageSize - 1}",
-            });
+            var queryString = QueryString.Create("range", $"{searchJobOffersFilters.Index}-{searchJobOffersFilters.Index + searchJobOffersFilters.PageSize - 1}");
 
             if (searchJobOffersFilters.Municipalities != null && searchJobOffersFilters.Municipalities.Length > 0)
             {
-                url = QueryHelpers.AddQueryString(url, new Dictionary<string, string>
+                var municipalitiesQueryString = QueryString.Create(new Dictionary<string, string>
                 {
                     ["commune"] = string.Join(",", searchJobOffersFilters.Municipalities),
                     ["distance"] = searchJobOffersFilters.DistanceFromMunicipalities.ToString(),
                 });
+
+                queryString.Add(municipalitiesQueryString);
             }
 
-            var request = new HttpRequestMessage(HttpMethod.Get, url);
+            var request = new HttpRequestMessage(HttpMethod.Get, $"search{queryString.ToUriComponent()}");
 
             request.Headers.Add("Authorization", $"Bearer {accessToken}");
 
