@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PoleEmploiScrapper.Api", "src\PoleEmploiScrapper.Api\PoleEmploiScrapper.Api.csproj", "{C8D3FA5A-E153-4082-9807-DDA57BD18FC3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PoleEmploiScrapper.Application", "src\PoleEmploiScrapper.Application\PoleEmploiScrapper.Application.csproj", "{1EDAD314-C251-4E3F-B620-1713D7FB9DE4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PoleEmploiScrapper.Domain", "src\PoleEmploiScrapper.Domain\PoleEmploiScrapper.Domain.csproj", "{F44141A2-2397-42DE-8743-B190A5AA7FAF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PoleEmploiScrapper.Infrastructure", "src\PoleEmploiScrapper.Infrastructure\PoleEmploiScrapper.Infrastructure.csproj", "{610F371C-AE3E-4070-BA17-FBDB90CC2801}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoleEmploi.Api", "src\PoleEmploi.Api\PoleEmploi.Api.csproj", "{2AFEB653-5CBE-4BC8-8F46-D8ECCB94BEC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoleEmploiScrapper.Configuration", "src\PoleEmploiScrapper.Configuration\PoleEmploiScrapper.Configuration.csproj", "{1C0CA308-80AD-44C3-8ADB-BF3CA30F8D8B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8D3FA5A-E153-4082-9807-DDA57BD18FC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8D3FA5A-E153-4082-9807-DDA57BD18FC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8D3FA5A-E153-4082-9807-DDA57BD18FC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8D3FA5A-E153-4082-9807-DDA57BD18FC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EDAD314-C251-4E3F-B620-1713D7FB9DE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EDAD314-C251-4E3F-B620-1713D7FB9DE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EDAD314-C251-4E3F-B620-1713D7FB9DE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EDAD314-C251-4E3F-B620-1713D7FB9DE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F44141A2-2397-42DE-8743-B190A5AA7FAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F44141A2-2397-42DE-8743-B190A5AA7FAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F44141A2-2397-42DE-8743-B190A5AA7FAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F44141A2-2397-42DE-8743-B190A5AA7FAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{610F371C-AE3E-4070-BA17-FBDB90CC2801}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{610F371C-AE3E-4070-BA17-FBDB90CC2801}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{610F371C-AE3E-4070-BA17-FBDB90CC2801}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{610F371C-AE3E-4070-BA17-FBDB90CC2801}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AFEB653-5CBE-4BC8-8F46-D8ECCB94BEC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AFEB653-5CBE-4BC8-8F46-D8ECCB94BEC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AFEB653-5CBE-4BC8-8F46-D8ECCB94BEC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AFEB653-5CBE-4BC8-8F46-D8ECCB94BEC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C0CA308-80AD-44C3-8ADB-BF3CA30F8D8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C0CA308-80AD-44C3-8ADB-BF3CA30F8D8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C0CA308-80AD-44C3-8ADB-BF3CA30F8D8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C0CA308-80AD-44C3-8ADB-BF3CA30F8D8B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3BC4E943-FA6B-42AA-BD79-24625E4450B4}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <UserSecretsId>a79e8bbd-298f-41c4-a6b9-6ce6f81213d1</UserSecretsId>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Coravel" Version="4.2.1" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.9" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="7.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PoleEmploi.Api\PoleEmploi.Api.csproj" />
+    <ProjectReference Include="..\PoleEmploiScrapper.Application\PoleEmploiScrapper.Application.csproj" />
+    <ProjectReference Include="..\PoleEmploiScrapper.Configuration\PoleEmploiScrapper.Configuration.csproj" />
+    <ProjectReference Include="..\PoleEmploiScrapper.Infrastructure\PoleEmploiScrapper.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
